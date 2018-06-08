@@ -1,0 +1,47 @@
+{
+  "name": "express-react-skeleton",
+  "version": "0.0.1",
+  "description": "A skeleton for express/react mixed projects.",
+  "author": "iLeoDo",
+  "private": true,
+  "scripts": {
+    "lint": "eslint",
+    "lint-fix": "eslint --fix .",
+    "test": "cross-env NODE_ENV=test echo 'ERROR'",
+    "start": "cross-env NODE_ENV=production node --inspect server.js",
+    "start-dev": "cross-env NODE_ENV=dev node server.js",
+    "build-app": "webpack --mode production",
+    "build-app-dev": "webpack --watch --mode development"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "dotenv": "^6.0.0",
+    "express": "~4.16.0",
+    "morgan": "~1.9.0",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "copy-webpack-plugin": "^4.5.1",
+    "cross-env": "^5.1.6",
+    "css-loader": "^0.28.11",
+    "eslint": "^4.19.1",
+    "eslint-config-google": "^0.9.1",
+    "file-loader": "^1.1.11",
+    "node-sass": "^4.9.0",
+    "sass-loader": "^7.0.1",
+    "style-loader": "^0.21.0",
+    "webpack": "^4.8.3",
+    "webpack-cli": "^2.1.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ileodo/express-react-skeleton"
+  },
+  "license": "MIT"
+}
